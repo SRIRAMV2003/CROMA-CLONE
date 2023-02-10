@@ -1,0 +1,904 @@
+body{
+    background-color: black;
+    font-family: "Ubuntu";
+    width: 100%;
+}
+
+.logo{
+    height: 120px;
+    width: 180px;
+    top: -60px;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  font-family: "Montserrat-light";
+}
+.nav-item{
+  text-align: right;
+  position: relative;
+  left: 500px;
+  color: white;
+}
+#title{
+  width: 200%;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+ 
+.iconsfirst{
+  font-size:3rem;
+  padding: 30px;
+}
+.navsearch{
+  text-align: left;
+  position: relative;
+  left: 250px;
+  font-size: 1rem;
+  width: 500px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+.bgfornav{
+  background-color: rgba(13, 13, 13, 0.582);
+  height: 120px;
+}
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 10px;
+  top: 0;
+  color: white;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 3rem;
+  color:white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: wheat;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* first div */
+.firstdiv{
+  background-color: rgb(17, 16, 16);
+  height: 200px;
+  width: 100%;
+  padding-top: 50px;
+  top: -300px;
+  color: rgb(241, 236, 236);
+  padding-left:120px;
+  padding-right: 150px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headingfirstdiv{
+  font-size: 20px;  
+}
+.headingfirstdiv:hover{
+ cursor: pointer;
+}
+.container-fluid{
+  width: 100%;
+  padding: 0;
+}
+/* slide show css code starts here */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration:6s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* slide sjow css code ends here */
+.pbtn{
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid white;
+  width: 300px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  float: right;
+}
+.twoimages{
+  margin: 2%;
+  align-items: center;
+  position: relative;
+  left: 150px;
+  top: 80px;
+  height: 100px;
+}
+.singleimage{
+  position: relative;
+  margin-top: 600px;
+  width: 100%;
+}
+.fourthimage{
+  width: 82%;
+  border-radius: 30px;
+  border: 2px solid black;
+  position: relative;
+  left: 170px;
+  top: 30px;
+}
+.fifthimage{
+  width: 82%;
+  border-radius: 30px;
+  border: 2px solid black;
+  position: relative;
+  left: 170px;
+  top: 60px;
+}
+/* SLIDE SHOW FROM CODINGLABWEB */
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+
+.sectionS{
+  position: relative;  
+  height: 450px;
+  width: 100%;
+  top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper{
+  width: 1175px;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 10px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #7d2ae8;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+section .card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #7d2ae8;
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card .media-icons{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .media-icons i{
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .media-icons i:hover{
+  opacity: 1;
+}
+
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+} 
+
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.card .rating{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.card .rating i{
+  font-size: 18px;
+  margin: 0 2px;
+  color: #7d2ae8;
+}
+
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card .button button{
+  background: #7d2ae8;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #6616d0;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #7d2ae8;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #7d2ae8;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #7d2ae8;
+}
+.siximages{
+  position: relative;
+  padding-left: 90px;
+  top: 600px;
+  left: 40px;
+}
+.roseimages{
+  width: 100%;
+  padding: 2%;
+  margin: 10px;
+}
+.blueimages{
+  padding:0 2%;
+  margin: 8px;
+}
+#threeimages{
+  padding:8%;
+  position: relative;
+  top: 450px;
+  left: 25px;
+}
+#threegreenimages{
+  padding:8%;
+  position: relative;
+  top: 200px;
+  left: 25px;
+}
+#singleorangeimage{
+  padding:8%;
+  position: relative;
+  top: -70px;
+  left: 25px;
+}
+#singleblueimage{
+  padding:8%;
+  position: relative;
+  top: -340px;
+  left: 25px;
+}
+#singletreeimage{
+  padding:8%;
+  position: relative;
+  top: -580px;
+  left: 25px;
+}
+.threeimgtext{
+  color: white;
+  font-family: cursive;
+  font-size: 2rem;
+}
+.threeimgtexts{
+  color: white;
+  font-family:sans-serif;
+  font-size: 2rem;
+}
+.threeimagesinside{
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 550px;
+  padding: 0 12px;
+}
+/* A ORANEG PIC WITH GIRL BELOW GENIOUS PICS */
+.singleimageinside{
+  width: 99%;
+  border: 0;
+  border-radius: 20px;
+}
+.singleimagesinside{
+  width: 99%;
+}
+.card1,.card2,.card3,.card4{
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  display: flex;
+  top: -180px;
+  left: 133px;
+}
+.imagecompare{
+  padding: 42px;
+
+}
+/* CSS FOR IPHONE SLIDESHOW START HERE */
+/* HEADER */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  top: -640px;
+  color: white;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  background-color: rgba(41, 31, 31, 0.284);
+  height: 740px;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 600px;
+  margin-right: 190px;
+}
+
+.product-image {
+  position: relative;
+  width: 150%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: rgb(28, 25, 25);
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 100px;
+  height: 100%;
+  position: relative;
+  top: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  top: 360px;
+  height: 100px;
+  width: 100px;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right:-1850px;
+  top:300px;
+  height: 100px;
+  width: 100px;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 1;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  color: red;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+/* CSS CODE FOR IPHONE SLIDESHOW ENDS HERE (499) */
+/* FOOTER */
+		
+
+  
+
+  
+
+
+  
+.font-size-4 {
+  font-size: 1.8rem!important;
+}
+.font-size-3 {
+  font-size: 1.4rem!important;
+}
+
+
+
+.block-dark {
+background-color: #0d151e;
+}
+.dark-top-curved-bg {
+background-image: url('https://keenthemes.com/images/misc/curve-dark-top-bg.png');
+}		
+
+.text-muted, .text-muted i {
+color: #b5b5c3!important;
+}		
+.text-dark-60 {
+color: #7e8299!important;
+}		
+.page_speed_560018307 {
+border-top: 1px solid #152231;
+}		
+.h-20px {
+height: 20px!important;
+}		
+.mr-2, .mx-2 {
+margin-right: 0.5rem!important;
+}
+.rounded-sm {
+border-radius: 0.25rem!important;
+}	
+
+.w-20px {
+width: 20px!important;
+}	
+.mr-4, .mx-4 {
+  margin-right: 1rem!important;
+}
+  
+  
+
+/* FOOTER ENDS 699 */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  position: relative;
+  font-size:25px;
+  line-height:50px;
+  color:white;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
